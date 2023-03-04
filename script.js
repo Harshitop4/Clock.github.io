@@ -1,0 +1,25 @@
+let hour= document.querySelector('.hour');
+let minute= document.querySelector('.minute');
+let second= document.querySelector('.second');
+    let time= new Date();
+    let chour= time.getHours();
+    let cminute= time.getMinutes();
+    let csecond= time.getSeconds();
+    let hrotat= 30*chour + cminute/2;
+    let mrotat= 6*cminute;
+    let srotat= 6*csecond;
+    hour.style.transform= `rotate(${hrotat}deg)`;
+    minute.style.transform= `rotate(${mrotat}deg)`;
+    second.style.transform= `rotate(${srotat}deg)`;
+setInterval(() => {
+    let time= new Date();
+    let chour= time.getHours();
+    let cminute= time.getMinutes();
+    let csecond= time.getSeconds();
+    let hrotat= 30*chour + cminute/2;
+    let mrotat= 6*cminute;
+    let srotat= 6*csecond;
+    hour.style.transform= `rotate(${hrotat}deg)`;
+    minute.style.transform= `rotate(${mrotat}deg)`;
+    second.style.transform= `rotate(${srotat}deg)`;
+}, 1000);

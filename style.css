@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Container{
+    background-color: #d2a5a5;
+}
+.Clock{
+    position: relative;
+    background: url('clock.png') no-repeat center;
+    background-size: 80%;
+    width: 50vw;
+    height: 100vh;
+    margin: auto;
+}
+.center{
+    width: 4%;
+    height: 4%;
+    background-color: #ad760f;
+    border-radius: 50%;
+    position: absolute;
+    left: 48.3%;
+    top: 48%;
+}
+.hour{
+    background-color: black;
+    width: 1.5%;
+    height: 15%;
+    position: absolute;
+    left: 49.65%;
+    top: 35%;
+    transform-origin: bottom;
+    border-radius: 33%;
+}
+.minute{
+    background-color: black;
+    width: 1%;
+    height: 21%;
+    position: absolute;
+    left: 49.65%;
+    top: 29%;
+    transform-origin: bottom;
+    border-radius: 33%;
+}
+.second{
+    background-color: black;
+    width: 0.7%;
+    height: 28%;
+    position: absolute;
+    left: 49.9%;
+    top: 22%;
+    transform-origin: bottom;
+    border-radius: 33%;
+}
+@media screen and (max-width:700px){
+    .Clock{
+        width: 80vw;
+    }
+    .center{
+        width: 4%;
+        height: 2.8%;
+        left: 48.3%;
+        top: 48.5%;
+    }
+    .hour {
+        height: 8%;
+        top: 42%;
+    }
+    .minute{
+        height: 11%;
+        top: 39%;
+    }
+    .second{
+        height: 15%;
+        top: 35%;
+    }
+}
+@media screen and (max-width:520px){
+    .center{
+        width: 4%;
+        height: 2.1%;
+        left: 48.3%;
+        top: 49%
+    }
+    .hour {
+        height: 6%;
+        top: 44%;
+    }
+    .minute{
+        height: 9%;
+        top: 41%;
+    }
+    .second{
+        height: 13%;
+        top: 37%;
+    }
+}
+@media screen and (max-width:450px){
+    .center{
+        width: 4%;
+        height: 1.6%;
+        left: 48.3%;
+        top: 49.2%;
+    }
+    .hour {
+        height: 5%;
+        top: 45%;
+    }
+    .minute{
+        height: 9%;
+        top: 41%;
+    }
+    .second{
+        height: 11%;
+        top: 39%;
+    }
+}
+@media screen and (max-width:374px){
+    .hour {
+        height: 5%;
+        top: 45%;
+    }
+    .minute{
+        height: 7%;
+        top: 43%;
+    }
+    .second{
+        height: 9%;
+        top: 41%;
+    }
+}
+@media screen and (max-width:300px){
+    .center{
+        width: 4%;
+        height: 1.6%;
+        left: 48.3%;
+        top: 49.2%;
+    }
+    .hour {
+        height: 4%;
+        top: 46%;
+    }
+    .minute{
+        height: 6%;
+        top: 44%;
+    }
+    .second{
+        height: 7%;
+        top: 43%;
+    }
+}
